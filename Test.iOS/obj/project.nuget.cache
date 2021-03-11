@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "jKh5vFNXVycj1+AGSZem9LfDxj6fVC7WOhl1Yvf8QiheInp8HJtPhZh78UiKKT47LhpSMQoZe9TYelhJE67aOQ==",
+  "success": true,
+  "projectFilePath": "/Users/roghic/Projects/Test/Test.iOS/Test.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/roghic/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/roghic/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "/Users/roghic/.nuget/packages/xamarin.testcloud.agent/0.22.2/xamarin.testcloud.agent.0.22.2.nupkg.sha512"
+  ],
+  "logs": []
+}

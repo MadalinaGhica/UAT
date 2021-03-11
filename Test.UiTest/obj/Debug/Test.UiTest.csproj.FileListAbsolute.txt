@@ -1,0 +1,12 @@
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/Test.UiTest.dll
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/Test.UiTest.pdb
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/nunit.framework.dll
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/Xamarin.UITest.dll
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/nunit.framework.pdb
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/nunit.framework.xml
+/Users/roghic/Projects/Test/Test.UiTest/bin/Debug/Xamarin.UITest.xml
+/Users/roghic/Projects/Test/Test.UiTest/obj/Debug/Test.UiTest.csproj.CoreCompileInputs.cache
+/Users/roghic/Projects/Test/Test.UiTest/obj/Debug/Test.UiTest.csproj.CopyComplete
+/Users/roghic/Projects/Test/Test.UiTest/obj/Debug/Test.UiTest.dll
+/Users/roghic/Projects/Test/Test.UiTest/obj/Debug/Test.UiTest.pdb
+/Users/roghic/Projects/Test/Test.UiTest/obj/Debug/Test.UiTest.csprojAssemblyReference.cache

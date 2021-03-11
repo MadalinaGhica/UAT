@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA85E005-896C-4265-B403-E94B28BF2228}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Test.UiTest</RootNamespace>
+    <AssemblyName>Test.UiTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.3.0.5\lib\net45\Xamarin.UITest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseTestFixture.cs" />
+    <Compile Include="AppInitializer.cs" />
+    <Compile Include="Pages\BasePageObject.cs" />
+    <Compile Include="Pages\BrowsePageObject.cs" />
+    <Compile Include="Pages\AddPageObject.cs" />
+    <Compile Include="Pages\MenuPageObject.cs" />
+    <Compile Include="Pages\AboutPageObject.cs" />
+    <Compile Include="Tests\AddItemTest.cs" />
+    <Compile Include="PlatformQuery.cs" />
+    <Compile Include="Pages\NewPageObject.cs" />
+    <Compile Include="Pages\ItemDetailPage.cs" />
+    <Compile Include="Tests\BrowseTest.cs" />
+    <Compile Include="Tests\AboutTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Test.iOS\Test.iOS.csproj">
+      <Project>{6AA997C2-59E4-47FD-89FC-012B06B3076E}</Project>
+      <Name>Test.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.Android\Test.Android.csproj">
+      <Project>{BC528085-143E-4BA4-B603-24E27C095CA8}</Project>
+      <Name>Test.Android</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
